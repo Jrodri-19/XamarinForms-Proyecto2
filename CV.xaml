@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplicacionDBP1.miApp.CV"
@@ -6,10 +6,8 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-            <GradientStop Color="#F5F5DC" Offset="0.0" />
-            <!-- Beige -->
-            <GradientStop Color="#8B4513" Offset="1.0" />
-            <!-- Brown -->
+            <GradientStop Color="#800080" Offset="0.0" />
+            <GradientStop Color="#4B0082" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -67,9 +65,7 @@
                     <Editor x:Name="idiomasEditor" Placeholder="Ingrese sus idiomas" HeightRequest="50" />
 
                     <Label Text="Habilidades" />
-                    <Entry x:Name="habilidadesEntry" Placeholder="Ingrese una habilidad" />
-                    <Button Text="Agregar Habilidad" Clicked="OnAddSkillClicked" />
-                    <ListView x:Name="habilidadesListView" ItemsSource="{Binding Habilidades}" />
+                    <Editor x:Name="habilidadesEditor" Placeholder="Ingrese sus habilidades" HeightRequest="50" />
 
                     <Button Text="Generar CV" Clicked="OnGenerateClicked" />
                 </StackLayout>
@@ -77,5 +73,6 @@
         </Grid>
     </StackLayout>
 </ContentPage>
+
 
 
