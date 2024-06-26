@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 
@@ -27,11 +28,6 @@ namespace AplicacionDBP1.miApp
                 Title = "Curriculum Vitae",
                 File = new ShareFile(filePath, "text/plain")
             });
-        }
-
-        private async void OnReturnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
         }
     }
 }
