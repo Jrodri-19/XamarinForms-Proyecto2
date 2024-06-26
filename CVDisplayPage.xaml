@@ -1,33 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AplicacionDBP1.miApp.CVDisplayPage"
-             Title="Curriculum Vitae">
+             Title="CV Display Page">
 
-    <ContentPage.Resources>
-        <Style TargetType="Label">
-            <Setter Property="FontSize" Value="Medium" />
-            <Setter Property="TextColor" Value="#000000" />
-            <Setter Property="Margin" Value="10,5" />
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="#000000" />
-            <Setter Property="TextColor" Value="White" />
-            <Setter Property="Margin" Value="20,10" />
-            <Setter Property="CornerRadius" Value="5" />
-            <Setter Property="Padding" Value="10" />
-        </Style>
-    </ContentPage.Resources>
-
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
-        <Label Text="Curriculum Vitae JR" FontSize="Large" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,10" />
-        <Frame BackgroundColor="White" Padding="20" CornerRadius="10">
-            <StackLayout>
-                <Label Text="Curriculum Vitae" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
-                <Label x:Name="cvContentLabel" TextColor="Black" />
-                <Button Text="Exportar CV" Clicked="OnExportClicked" />
-                <Button Text="Regresar" Clicked="OnReturnClicked" />
-            </StackLayout>
-        </Frame>
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+            <Label Text="Curriculum Vitae" FontSize="Large" TextColor="Black" HorizontalOptions="Center" />
+            <Label x:Name="cvContentLabel" TextColor="Black" />
+            <Button Text="Exportar CV" Clicked="OnExportClicked" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
